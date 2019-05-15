@@ -1,0 +1,432 @@
+.Dash {
+  height: 100vh;
+  display: inline-block;
+  width: 100%;
+  color: white;
+}
+
+.Navbar{
+  width: 100%;
+  height: 10%;
+  background-color: #0254A6;
+  z-index: 10;
+}
+
+.dropdown {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1em;
+    padding-right: 1em;
+    padding-top: .5em;
+}
+
+.dropdown__content a{
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.dropdown__content a:visited {
+  color: white;
+}
+
+.dropdown__content ul{
+    list-style-type: none;
+    padding: 10% 10% 0 10%;
+}
+
+.dropdown__content li{
+    padding: 20%;
+}
+
+.dropdown__content {
+    display: none;
+    position: absolute;
+    text-align: left;
+    padding-right: 40px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.dropdown--active .dropdown__content {
+    display: block;
+    background-color:rgba(0,48,66,0.95);
+}
+
+.Navbar__Left{
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.Navbar__Right{
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+
+.Navbar__List{
+  margin-right: 10%;
+  list-style: none;
+  display: inline-flex;
+}
+
+.Navbar__List li {
+  font-size: 1em;
+  padding-right: 1em;
+  padding-top: .5em;
+}
+
+.Navbar__Link{
+  text-decoration: none;
+  color: white;
+}
+
+.Dashboard{
+  width: 100%;
+  height: auto;
+  color: black;
+}
+
+.Dashboard__New--Activity{
+  margin: 2% 2% 2% 2%;
+  width: 29%;
+  height: inherit;
+  display: inline-block;
+  float: inherit;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 20px;
+  border: 1px dashed lightgray;
+  color: lightgray;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.Dashboard__New--Activity:hover{
+  box-shadow: 0 8px 16px 0 rgba(54,154,223,0.2);
+  border: 1px dashed #369ADF;
+  color: rgba(54,154,223,0.7);
+}
+
+.Dashboard__New--Activity:before{
+  content: "+";
+  padding-top: 15%;
+  padding-bottom: 15%;
+  position: relative;
+  float: left;
+  left: 50%;
+  top: 50%;
+}
+
+.Dashboard__Activity{
+  margin: 2% 2% 2% 2%;
+  width: 29%;
+  height: auto;
+  display: inline-block;
+  float: inherit;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 20px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.Dashboard__Activity:hover {
+  box-shadow: 0 8px 16px 0 rgba(54,154,223,0.2);
+  border: 1px solid #369ADF;
+}
+
+a.boxclose{
+    float:right;
+    margin-top:-15px;
+    margin-right:-25px;
+    cursor:pointer;
+    color: #fff;
+    border: 1px solid #AEAEAE;
+    border-radius: 30px;
+    background: #000;
+    font-size: 31px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 0px;
+    padding: 11px 3px;
+}
+
+.boxclose:before {
+    content: "×";
+}
+
+.AddActivity__Button {
+  background-color: #369ADF;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  padding: 15px 70px;
+  margin-top: 1% !important;
+  margin: 0 auto;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.Dashboard__Image{
+  width: 100%;
+  background-repeat: no-repeat;
+  background-color: rgba(54,154,223,0.2);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.Dashboard__Image--Group{
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -4px;
+  background-repeat: no-repeat;
+  background-color: rgba(54,154,223,0.2);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.Activity__Erase{
+  padding-top: 30px;
+  float: right;
+  filter: invert(.5);
+  width: 20px;
+}
+
+.Activity__Erase:hover{
+  filter: invert(.5) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+.Activity__Edit{
+  padding-top: 30px;
+  margin-right: 15px;
+  filter: invert(.5);
+  float: right;
+  width: 20px;
+}
+
+.Activity__Edit:hover{
+  filter: invert(.5) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+.Dashboard__Activity--Container{
+  padding: 20px;
+  background-color: rgba(0,0,0,0.05);
+}
+
+.Dashboard__Activity--Options{
+  padding: 20px;
+  background-color: rgba(0,0,0,0.05);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.Create{
+  width: 100%;
+  height: auto;
+  color: black;
+}
+
+.AddActivityForm{
+  width: 100%;
+  height: auto;
+  margin-left: 38%;
+  margin-top: 5%;
+}
+
+.AddActivity__Input {
+  width: 30%;
+  background-color: transparent;
+  border: none;
+  color: black;
+  outline: none;
+  border-bottom: 1px solid #445366;
+  font-size: 1em;
+  font-weight: 300;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.RangeExample{
+  position: relative;
+  left: -5%;
+}
+
+.Calendar__P{
+  color: #369ADF;
+}
+
+.Calendar__Space{
+  margin: 2px;
+  padding: 10px;
+}
+
+.Calendar__Border{
+  border: 3px dashed #f0f8ff;
+  margin-right: 60%;
+  padding: 2px;
+}
+
+.Calendar__Reset{
+  color: red;
+  margin-left: 3%;
+  border: none;
+  font-size: 1em;
+}
+
+.Hour{
+  position: relative;
+  left: -5%;
+  margin-right: 60%;
+}
+
+.Hour__Select{
+  color: gray;
+  float: right;
+  width: 50%;
+}
+
+.Hour__P{
+  padding-top: 2.5%;
+  float: left;
+  color: gray;
+}
+
+.Hour__Space{
+  padding: 2% 0 2% 0;
+}
+
+.Selectable .DayPicker-Day--selected:not(.DayPicker-Day--start):not(.DayPicker-Day--end):not(.DayPicker-Day--outside) {
+  background-color: #f0f8ff !important;
+  color: #4a90e2;
+}
+.Selectable .DayPicker-Day {
+  border-radius: 0 !important;
+  border-color: black;
+}
+.Selectable .DayPicker-Day--start {
+  border-top-left-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+}
+.Selectable .DayPicker-Day--end {
+  border-top-right-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.Groups_Buttons{
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.AddGroup__Button--Random {
+  background-color: #369ADF;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  padding: 15px 70px;
+  margin-top: 1% !important;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.AddGroup__Button--Reset {
+  background-color: #C74646;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  padding: 15px 70px;
+  margin-top: 1% !important;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.AddGroup__Button--End {
+  background-color: #7BC043;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  padding: 15px 70px;
+  margin-top: 1% !important;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.Group__DropContext{
+  display: flex;
+}
+
+.Group__Column{
+  margin: 8px;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Group__Title{
+  padding: 8px;
+  margin: 2px;
+}
+
+.Profile{
+  width: 100%;
+  background-color: white;
+  height: 70%;
+  color: black;
+}
+
+.Profile__Container{
+  width: 50%;
+  background-color: #0254A6;
+  box-shadow: 0 8px 25px 0 rgba(2,0,0,0.2);
+  transition: box-shadow 1s ease-out;
+  height: 100%;
+  margin-left: 25%;
+  margin-top: 7%;
+  border-radius: 12px;
+  display: block;
+  position: relative;
+}
+
+.Profile__Container:hover{
+  box-shadow: 0 8px 16px 0 rgba(2,0,0,0.7);
+  transition: box-shadow 1s ease-out;
+}
+
+.Profile__User--Image{
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  height: 30%;
+  position: absolute;
+  top: -15%;
+  transform-style: preserve-3d;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+
+.Students{
+  width: 100%;
+  background-color: red;
+  color: black;
+}
+
+.Options{
+  width: 100%;
+  background-color: purple;
+  color: black;
+}
